@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="main_bg" format="color" />
+    <attr name="btn_bg" format="color" />
+    <attr name="light_bg_95" format="color" />
+    <attr name="light_bg_90" format="color" />
+    <attr name="light_bg_75" format="color" />
+    <attr name="light_bg_50" format="color" />
+    <attr name="light_bg_25" format="color" />
+    <attr name="light_bg_10" format="color" />
+    <attr name="opposite_theme" format="color" />
+    <attr name="opposite_75" format="color" />
+    <attr name="opposite_50" format="color" />
+    <attr name="opposite_25" format="color" />
+    <attr name="opposite_10" format="color" />
+    <attr name="opposite_5" format="color" />
+    <attr name="ad_bg" format="color" />
+    <attr name="txt_color" format="color" />
+    <attr name="txt_light" format="color" />
+    <attr name="icon_light" format="color" />
+    <attr name="blur_overlay_50" format="color" />
+    <attr name="blur_overlay_90" format="color" />
+    <attr name="common" format="color" />
+    <attr name="common_5" format="color" />
+    <attr name="common_10" format="color" />
+    <attr name="common_25" format="color" />
+    <attr name="common_50" format="color" />
+    <attr name="common_75" format="color" />
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SpannedGridLayoutManager">
+        <attr name="android:orientation" />
+        <attr name="spanCount" />
+<!--        <attr name="aspectRatio" format="string" />-->
+    </declare-styleable>
+</resources>

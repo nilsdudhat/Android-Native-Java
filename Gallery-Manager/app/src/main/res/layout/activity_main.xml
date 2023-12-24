@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tistory.zladnrms.roundablelayout.RoundableLayout
+        android:id="@+id/bottom_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@android:color/transparent"
+        app:backgroundColor="@android:color/transparent"
+        app:cornerLeftTop="@dimen/_25sdp"
+        app:cornerRightTop="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.github.mmin18.widget.RealtimeBlurView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:realtimeBlurRadius="@dimen/_30sdp"
+            app:realtimeOverlayColor="?attr/blur_overlay_90" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_library"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/indicator_library"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:src="@drawable/tab_indicator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_library"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_library_dark_selected"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_library"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator_library" />
+
+                <TextView
+                    android:id="@+id/txt_library"
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Library"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_for_you"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/indicator_for_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:src="@drawable/tab_indicator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_for_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_for_you_light"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_library"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator_library" />
+
+                <TextView
+                    android:id="@+id/txt_for_you"
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="For You"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_albums"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/indicator_albums"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:src="@drawable/tab_indicator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_albums"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_albums_dark_selected"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_albums"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator_albums" />
+
+                <TextView
+                    android:id="@+id/txt_albums"
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Albums"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/indicator_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginHorizontal="@dimen/_25sdp"
+                    android:src="@drawable/tab_indicator"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_settings_light_selected"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_settings"
+                    app:layout_constraintTop_toBottomOf="@+id/indicator_settings" />
+
+                <TextView
+                    android:id="@+id/txt_settings"
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Settings"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

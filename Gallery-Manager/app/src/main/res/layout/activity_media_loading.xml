@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_banner"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_all_media"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="false"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_100sdp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_loader"
+            android:paddingTop="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/txt_media_size"
+                style="@style/Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="?txt_color"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_loading_path" />
+
+            <TextView
+                android:id="@+id/txt_loading_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/bg_loading_data"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:singleLine="true"
+                android:text="Initialising data loading..."
+                android:textColor="?main_bg"
+                android:textSize="@dimen/_8sdp"
+                app:layout_constraintBottom_toTopOf="@+id/simpleProgressBar" />
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBar"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressTint="?txt_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="UnusedAttribute" /><!--true value for indeterminate-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

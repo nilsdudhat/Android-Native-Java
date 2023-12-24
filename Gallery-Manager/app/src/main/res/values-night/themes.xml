@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/grey_white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/grey_white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <!--        font family-->
+        <item name="fontFamily">@font/sf_pro_regular</item>
+        <!-- Customize your theme here. -->
+        <item name="main_bg">@color/black</item>
+        <item name="btn_bg">@color/grey_white</item>
+        <item name="light_bg_95">#F2000000</item>
+        <item name="light_bg_90">#E6000000</item>
+        <item name="light_bg_75">#BF000000</item>
+        <item name="light_bg_50">#80000000</item>
+        <item name="light_bg_25">#40000000</item>
+        <item name="light_bg_10">#1A000000</item>
+        <item name="opposite_theme">#FFFFFF</item>
+        <item name="opposite_75">#BFFFFFFF</item>
+        <item name="opposite_50">#80FFFFFF</item>
+        <item name="opposite_25">#40FFFFFF</item>
+        <item name="opposite_10">#1AFFFFFF</item>
+        <item name="opposite_5">#0DFFFFFF</item>
+        <item name="ad_bg">#1AFFFFFF</item>
+        <item name="txt_color">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="txt_light">#80FFFFFF</item>
+        <item name="icon_light">#80FFFFFF</item>
+        <item name="blur_overlay_50">#80232323</item>
+        <item name="blur_overlay_90">#E6232323</item>
+
+        <item name="common">#fff</item>
+        <item name="common_5">#0DFFFFFF</item>
+        <item name="common_10">#1AFFFFFF</item>
+        <item name="common_25">#40FFFFFF</item>
+        <item name="common_50">#80FFFFFF</item>
+        <item name="common_75">#BFFFFFFF</item>
+    </style>
+
+    <style name="Bold" parent="AppTheme">
+        <item name="fontFamily">@font/sf_pro_bold</item>
+    </style>
+
+    <style name="SemiBold" parent="AppTheme">
+        <item name="fontFamily">@font/sf_pro_semi_bold</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+</resources>

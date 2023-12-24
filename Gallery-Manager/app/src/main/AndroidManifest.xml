@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!--Require for Ads Integration-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!--Require for Ads Integration-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!--Require for Ads Integration-->
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" /> <!--to retrieve unredacted Exif metadata from photos-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!--Read Media Files from External Storage-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" /> <!-- To Write Media Files in External Storage-->
+
+    <!--access permission to set the wallpaper-->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activities.MediaLoadingActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.FullScreenMediaActivity"
+            android:exported="true" />
+
+        <activity android:name=".ui.activities.CustomPlayerActivity" />
+
+        <activity
+            android:name=".ui.activities.SelectionMediaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.ForYouActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.PlacesActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.PlacesMediaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.CropActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.AlbumsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.AlbumMediaActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.activities.QuickQuitActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2644176260496039~2528444813" />
+    </application>
+</manifest>
