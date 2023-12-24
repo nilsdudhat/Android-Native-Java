@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "523784027517",
+    "project_id": "igallery-c15b1",
+    "storage_bucket": "igallery-c15b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523784027517:android:e58c46847440acbc5da014",
+        "android_client_info": {
+          "package_name": "com.croppy.cropimage.photoresize.socialmedia.profilephotocrop.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcM7YvxCnrUaSWeESBi-xv1H7lj5gO1CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523784027517:android:37c1b5e411902cba5da014",
+        "android_client_info": {
+          "package_name": "com.iphoto.iphonegallery.iosgallerylauncher.photoios.iosgallery.forandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcM7YvxCnrUaSWeESBi-xv1H7lj5gO1CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523784027517:android:004ea4064dbc72265da014",
+        "android_client_info": {
+          "package_name": "com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcM7YvxCnrUaSWeESBi-xv1H7lj5gO1CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523784027517:android:92b4be62e6ef40215da014",
+        "android_client_info": {
+          "package_name": "com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcM7YvxCnrUaSWeESBi-xv1H7lj5gO1CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523784027517:android:bfcb5708496c18ea5da014",
+        "android_client_info": {
+          "package_name": "com.phototool.imageconverter.cropimage.compressphoto.resizephoto.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcM7YvxCnrUaSWeESBi-xv1H7lj5gO1CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523784027517-dqjtc1snncqquqqd7jn4o7ic8drucnso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

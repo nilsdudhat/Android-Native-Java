@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Google services Gradle plugin
+apply plugin: 'com.google.gms.google-services'
+
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 34
+    namespace 'com.croppy.cropimage.photoresize.socialmedia.profilephotocrop.app'
+
+    defaultConfig {
+        applicationId "com.croppy.cropimage.photoresize.socialmedia.profilephotocrop.app"
+        minSdk 19
+        targetSdk 34
+        versionCode 1
+        versionName "0.1"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // to handle multi dex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    // to make responsive ui
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    // to load images
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    // round image view
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // for cropping image in different ratios
+    implementation 'com.steelkiwi:cropiwa:1.0.3'
+    implementation 'com.isseiaoki:simplecropview:1.1.8'
+
+    // image conversion
+    implementation 'com.github.flipzeus:flipzeus:0.0.1'
+
+    // load json files
+    implementation 'com.airbnb.android:lottie:5.0.3'
+
+    // auto scroll viewpager
+    implementation 'com.github.pzienowicz:androidx-auto-scroll-view-pager:1.4.0'
+
+    // pager indicator
+    implementation("com.tbuonomo:dotsindicator:4.3")
+
+    // straighten image
+    implementation 'com.github.shchurov:horizontalwheelview:0.9.5'
+
+    // For Ads Integration
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+    // noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.3.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+}

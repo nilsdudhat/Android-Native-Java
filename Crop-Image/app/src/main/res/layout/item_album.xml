@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.croppy.cropimage.photoresize.socialmedia.profilephotocrop.app.views.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/square_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/full_app_name"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/_5sdp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progress2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_album_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_textbg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text="@string/full_app_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</com.croppy.cropimage.photoresize.socialmedia.profilephotocrop.app.views.SquareLayout>

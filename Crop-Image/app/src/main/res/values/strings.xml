@@ -1,0 +1,25 @@
+<resources>
+    <string name="full_app_name">Croppy - Crop Image</string>
+    <string name="app_name">Croppy</string>
+
+    <string name="permissions_denied">Permissions denied.</string>
+    <string name="action_grant">Grant</string>
+    <string name="action_settings">"Settings"</string>
+
+    <string name="temp">Temp</string>
+
+    <!--    For AdsIntegration-->
+    <!--    For Admob-->
+    <!--    Sample Ids-->
+    <!--    <string name="admob_open_ad">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="admob_native">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    Sample Ids-->
+    <string name="admob_open_ad">ca-app-pub-2644176260496039/2622504077</string>
+    <string name="admob_interstitial">ca-app-pub-2644176260496039/9656468675</string>
+    <string name="admob_native">ca-app-pub-2644176260496039/6809161095</string>
+    <string name="admob_banner">ca-app-pub-2644176260496039/3118980483</string>
+    <!--    For Admob-->
+    <!--    For AdsIntegration-->
+</resources>
