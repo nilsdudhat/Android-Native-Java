@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="txt_color" format="color" />
+    <attr name="txt_light" format="color" />
+
+    <attr name="iconLight" format="color" />
+    <attr name="card_bg" format="color" />
+
+    <attr name="blur" format="color" />
+
+    <attr name="ad_bg" format="color" />
+
+    <attr name="opposite_5" format="color" />
+    <attr name="opposite_10" format="color" />
+    <attr name="opposite_25" format="color" />
+    <attr name="opposite_50" format="color" />
+    <attr name="opposite_75" format="color" />
+    <attr name="opposite_90" format="color" />
+    <attr name="opposite_95" format="color" />
+    <attr name="opposite_color" format="color" />
+
+    <attr name="theme_5" format="color" />
+    <attr name="theme_10" format="color" />
+    <attr name="theme_25" format="color" />
+    <attr name="theme_50" format="color" />
+    <attr name="theme_75" format="color" />
+    <attr name="theme_90" format="color" />
+    <attr name="theme_95" format="color" />
+    <attr name="theme_color" format="color" />
+</resources>

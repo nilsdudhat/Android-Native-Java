@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange_regular</item>
+        <item name="colorPrimaryVariant">@color/orange_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+
+        <item name="android:colorEdgeEffect" tools:targetApi="lollipop">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="txt_color">@color/white</item>
+        <item name="txt_light">#4DFFFFFF</item>
+
+        <item name="ad_bg">#1AFFFFFF</item>
+
+        <item name="card_bg">#23262F</item>
+
+        <item name="blur">#E623262F</item>
+
+        <item name="iconTint">@color/white</item>
+        <item name="iconLight">#4DFFFFFF</item>
+
+        <item name="theme_5">#0D000000</item>
+        <item name="theme_10">#1A000000</item>
+        <item name="theme_25">#40000000</item>
+        <item name="theme_50">#80000000</item>
+        <item name="theme_75">#BF000000</item>
+        <item name="theme_90">#E6000000</item>
+        <item name="theme_95">#F2000000</item>
+        <item name="theme_color">@color/black</item>
+
+        <item name="opposite_5">#0DFFFFFF</item>
+        <item name="opposite_10">#1AFFFFFF</item>
+        <item name="opposite_25">#40FFFFFF</item>
+        <item name="opposite_50">#80FFFFFF</item>
+        <item name="opposite_75">#BFFFFFFF</item>
+        <item name="opposite_90">#E6FFFFFF</item>
+        <item name="opposite_95">#F2FFFFFF</item>
+        <item name="opposite_color">#FFFFFF</item>
+
+        <!--        <item name="android:windowAnimationStyle">@style/Animation.MyCustomAnimation</item>-->
+    </style>
+
+    <style name="FullScreen" parent="AppTheme">
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@android:color/transparent
+        </item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:ignore="NewApi">shortEdges</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--        <item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+    </style>
+
+    <style name="ToggleButton" parent="AppTheme">
+        <item name="colorSecondary">@color/orange_regular</item>
+    </style>
+
+    <style name="Bold" parent="AppTheme">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Regular" parent="AppTheme">
+        <item name="fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Medium" parent="AppTheme">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Light" parent="AppTheme">
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+</resources>
