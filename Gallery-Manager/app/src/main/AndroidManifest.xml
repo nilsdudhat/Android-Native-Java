@@ -14,6 +14,7 @@
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" /> <!-- To Write Media Files in External Storage-->
 
+    <!--access permission to set the wallpaper-->
     <uses-permission android:name="android.permission.SET_WALLPAPER" />
     <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
 
