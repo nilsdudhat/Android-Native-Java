@@ -1,0 +1,122 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Google services Gradle plugin
+apply plugin: 'com.google.gms.google-services'
+
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    namespace 'com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app"
+        minSdk 19
+        targetSdk 34
+        renderscriptTargetApi 34
+        renderscriptSupportModeEnabled true
+        vectorDrawables.useSupportLibrary = true
+        versionCode 1
+        versionName "0.1"
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    // Required for IntroActivity
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    implementation 'com.github.kabouzeid:app-theme-helper:1.3.10'
+    implementation 'com.github.kabouzeid:RecyclerView-FastScroll:1.0.16-kmod'
+    implementation 'com.github.kabouzeid:SeekArc:1.2-kmod'
+    implementation 'com.github.kabouzeid:AndroidSlidingUpPanel:6'
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0' // +
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
+    implementation 'com.afollestad:material-cab:0.1.12'
+
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:1.0.0@aar') {
+        transitive = true
+    } // + updated library from github
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.10'
+
+    implementation 'de.psdev.licensesdialog:licensesdialog:2.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.5.0'
+
+    implementation 'org.eclipse.mylyn.github:org.eclipse.egit.github.core:2.1.5'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.AdrienPoupa:jaudiotagger:2.2.3'
+
+    implementation 'com.github.mindinventory:minavdrawer:1.2.2'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.github.zladnrms:RoundableLayout:1.1.4'
+
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+
+//    For Ads Integration
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
+
+    implementation 'androidx.work:work-runtime:2.9.0'
+
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.3.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+}

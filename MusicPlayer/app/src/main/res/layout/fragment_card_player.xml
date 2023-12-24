@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--The unused FrameLayout layout is necessary to prevent a crash on rotate-->
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/player_sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="true"
+        android:gravity="bottom"
+        sothree:umanoFadeColor="#00000000"
+        sothree:umanoOverlay="true"
+        sothree:umanoPanelHeight="0dp"
+        sothree:umanoScrollableView="@+id/player_recycler_view"
+        sothree:umanoShadowHeight="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/color_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/player_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app.views.WidthFitSquareLayout
+                    android:id="@+id/album_cover_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_25sdp">
+
+                    <fragment
+                        android:id="@+id/player_album_cover_fragment"
+                        class="com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app.ui.fragments.player.PlayerAlbumCoverFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app.views.WidthFitSquareLayout>
+
+                <fragment
+                    android:id="@+id/playback_controls_fragment"
+                    class="com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app.ui.fragments.player.card.CardPlayerPlaybackControlsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/album_cover_container" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/toolbar_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/shadow_statusbar_toolbar" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/player_toolbar"
+                    style="@style/Toolbar"
+                    android:background="@android:color/transparent" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/player_panel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_marginTop="@dimen/status_bar_padding"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/playing_queue_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="-8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/card_elevation"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                    <com.github.mmin18.widget.RealtimeBlurView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:realtimeBlurRadius="@dimen/_40sdp"
+                        app:realtimeOverlayColor="#26FFFFFF" />
+
+                    <!--This is necessary for the drag sorting to work at the top-->
+                    <View
+                        android:id="@+id/draggable_area"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/card_content"
+                        android:layout_alignBottom="@+id/card_content"
+                        android:layout_marginTop="120dp" />
+
+                    <LinearLayout
+                        android:id="@+id/card_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_playlist_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!--                            <ImageView-->
+                            <!--                                android:id="@+id/img_swipe"-->
+                            <!--                                android:layout_width="@dimen/_25sdp"-->
+                            <!--                                android:layout_height="@dimen/_25sdp"-->
+                            <!--                                android:layout_marginTop="@dimen/_2sdp"-->
+                            <!--                                android:alpha="0.25"-->
+                            <!--                                android:src="@drawable/ic_swipe_up" />-->
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="Playing Queue"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="?attr/dividerColor"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                        <include
+                            android:id="@+id/current_song"
+                            android:visibility="gone"
+                            layout="@layout/item_list" />
+
+                        <TextView
+                            android:id="@+id/player_queue_sub_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="@string/up_next"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            android:textColor="?android:textColorSecondary"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/player_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:requiresFadingEdge="vertical" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</FrameLayout>

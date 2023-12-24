@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_50sdp"
+    android:background="@android:color/transparent"
+    tools:ignore="UnusedAttribute">
+
+    <com.mplayer.musicplayer.mp3player.playsongs.offlineonlineaudio.app.views.IconImageView
+        android:id="@+id/drag_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|start"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_drag_vertical_white_24dp"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/image_text"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:textSize="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:singleLine="true"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/light_white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menu"
+            style="@style/OverFlowButton"
+            android:layout_gravity="center_vertical"
+            app:tint="#BFFFFFFF"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="?attr/dividerColor"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/short_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="72dp"
+        android:background="?attr/dividerColor" />
+</FrameLayout>

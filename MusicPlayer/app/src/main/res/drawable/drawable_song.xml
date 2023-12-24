@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_gradient_square" />
+    <item
+        android:bottom="@dimen/_6sdp"
+        android:drawable="@drawable/ic_music"
+        android:left="@dimen/_8sdp"
+        android:right="@dimen/_8sdp"
+        android:top="@dimen/_10sdp" />
+</layer-list>
