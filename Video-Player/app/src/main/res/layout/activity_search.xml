@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?main_bg"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/header">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_back"
+            app:tint="?ic_color" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            style="@style/Regular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/rl_cancel"
+            android:layout_toEndOf="@+id/img_back"
+            android:background="@drawable/bg_round"
+            android:hint="Search..."
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="?txt_color"
+            android:textColorHint="?attr/light_color_25"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="@dimen/_14sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <!--            <View-->
+            <!--                android:layout_width="@dimen/_2sdp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginVertical="@dimen/_5sdp"-->
+            <!--                android:background="@drawable/divider_light" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/txt_cancel"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:gravity="center"-->
+            <!--                android:paddingStart="@dimen/_10sdp"-->
+            <!--                android:paddingEnd="@dimen/_15sdp"-->
+            <!--                android:text="Cancel"-->
+            <!--                android:textColor="?opposite_light_color"-->
+            <!--                android:textSize="@dimen/_12sdp"-->
+            <!--                android:textStyle="bold" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_banner"
+        app:layout_constraintTop_toBottomOf="@+id/rl_search">
+
+        <TextView
+            android:id="@+id/txt_search_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Result"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:clipToPadding="true"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

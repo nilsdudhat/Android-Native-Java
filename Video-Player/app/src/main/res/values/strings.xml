@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">vPlayer</string>
+
+    <!--    For AdsIntegration-->
+    <!--    For Admob-->
+
+    <!--    Sample IDs-->
+    <!--    <string name="admob_open_ad">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="admob_native">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    Sample IDs-->
+
+    <string name="admob_open_ad">ca-app-pub-2644176260496039/7735182226</string>
+    <string name="admob_interstitial">ca-app-pub-2644176260496039/8139610551</string>
+    <string name="admob_native">ca-app-pub-2644176260496039/1473026203</string>
+    <string name="admob_banner">ca-app-pub-2644176260496039/6004401801</string>
+    <!--    For Admob-->
+    <!--    For Facebook-->
+    <!--    For Facebook-->
+    <!--    For AdsIntegration-->
+
+    <string name="permissions_denied">Permissions denied.</string>
+    <string name="action_grant">Grant</string>
+    <string name="action_settings">"Settings"</string>
+
+    <string name="permission_external_storage_denied">Permission to access external storage denied.</string>
+
+
+    ///
+    <string name="volume">Volume</string>
+    <string name="okay">Okay</string>
+    <string name="file_name">File Name</string>
+    <string name="duration">Duration</string>
+    <string name="file_size">File size</string>
+    <string name="location">Location</string>
+    <string name="playback_speed">Playback Speed</string>
+    <string name="sw_decoder">Sw Decoder</string>
+    <string name="lock">Lock</string>
+    <string name="propertie">Property</string>
+    <string name="sleep_timer">Sleep Timer</string>
+    <string name="repeat_one">Repeat One</string>
+    <string name="share_video">Share Video</string>
+    <string name="track">Track</string>
+    <string name="other">Other</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="sleep_timer_desc">Video Player is not playing any songs,Please start playing song and then set Sleep Timer</string>
+    <string name="stop_playing_after">Stop Playing After: </string>
+    <string name="disabled">Disabled</string>
+    <string name="min120">120 minutes</string>
+    <string name="brightness">Brightness</string>
+    <string name="settings_appbar">Setting</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="track_selection_title">Track Selection</string>
+    <string name="exo_track_selection_title_video">Video</string>
+    <string name="exo_track_selection_title_audio">Audio</string>
+    <string name="exo_track_selection_title_text">Text</string>
+    <string name="action_sleep_timer">Sleep Timer</string>
+    <string name="ok">Ok</string>
+    <string name="sleep_timer_set">Sleep timer set for %d minutes from now.</string>
+    <string name="sleep_timer_canceled">Sleep timer cancelled.</string>
+    <string name="reverb">Reverb</string>
+    <string name="bass_boost">Bass boost</string>
+    <string name="virtulizer">Virtulizer</string>
+    <string name="preset_none">None</string>
+    <string name="preset_large_hall">Large Hall</string>
+    <string name="preset_large_room">Large Room</string>
+    <string name="preset_medium_hall">Medium Hall</string>
+    <string name="preset_medium_room">Medium Room</string>
+    <string name="preset_small_room">Small Room</string>
+    <string name="preset_plate">Plate</string>
+    <string name="private_folder_name">Private Folder</string>
+    <string name="rename_file">File Rename</string>
+    <string name="enter_new_file_name">enter new file name</string>
+    <string name="date">Date</string>
+    <string name="recycler_folder_name">Folder Name</string>
+
+</resources>

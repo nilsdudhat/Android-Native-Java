@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:controller_layout_id="@layout/playback_control"
+        app:fastforward_increment="10000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:player_layout_id="@layout/exo_player_view"
+        app:repeat_toggle_modes="one"
+        app:rewind_increment="10000"
+        app:show_timeout="3000"
+        app:use_controller="true"></com.google.android.exoplayer2.ui.PlayerView>
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/frembatery"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:layout_marginEnd="15dp"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:visibility="invisible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="12dp"-->
+    <!--            android:layout_height="12dp"-->
+    <!--            android:adjustViewBounds="true"-->
+    <!--            android:src="@drawable/ic_battery"-->
+    <!--            app:tint="@color/white" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/batteryTxt"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="25"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="10sp"-->
+    <!--            tools:ignore="SmallSp" />-->
+    <!--    </LinearLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sheetmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<include
+        android:id="@+id/sheet"
+        layout="@layout/playlist_sheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/player_view"
+        app:layout_constraintStart_toStartOf="@+id/player_view"
+        app:layout_constraintTop_toTopOf="@+id/player_view" />-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:text="Brightness:  100%"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/player_view"
+        app:layout_constraintEnd_toEndOf="@+id/player_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player_view" />
+
+
+    <LinearLayout
+        android:id="@+id/volum_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBarWrapper
+            android:id="@+id/verticalSeekBarWrapper"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="130dp">
+
+            <com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBar
+                android:id="@+id/brightseek"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="match_parent"
+                android:progressBackgroundTint="@color/white"
+                android:progressDrawable="@drawable/progress_v"
+                android:splitTrack="false"
+                android:thumbTint="@android:color/transparent"
+                android:visibility="visible"
+                app:seekBarRotation="CW270" />
+            <!-- Rotation: CW90 or CW270 -->
+        </com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBarWrapper>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_volume" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bright_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBarWrapper
+            android:id="@+id/verticalSeekBarWrapper2"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="130dp">
+
+            <com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBar
+                android:id="@+id/volumeseek"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:progressBackgroundTint="@color/white"
+                android:progressDrawable="@drawable/progress_b"
+                android:saveEnabled="true"
+                android:splitTrack="false"
+                android:thumbTint="@android:color/transparent"
+                app:seekBarRotation="CW270" />
+        </com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.equalizer.VerticalSeekBarWrapper>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_brightness" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/vadfrm"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/adclosebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#2F000000"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <FrameLayout
+            android:id="@+id/adfrm"
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="50dp"
+            android:background="#2F000000" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

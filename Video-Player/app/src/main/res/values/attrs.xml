@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="main_bg" format="color" />
+    <attr name="navigation_bg" format="color" />
+    <attr name="card_bg" format="color" />
+    <attr name="txt_color" format="color" />
+    <attr name="colorAccent" format="color" />
+    <attr name="ic_color" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="opposite_color" format="color" />
+    <attr name="theme_color" format="color" />
+    <attr name="light_color_50" format="color" />
+    <attr name="light_color_25" format="color" />
+    <attr name="opposite_light_color" format="color" />
+
+    <!--    <declare-styleable name="YouTubeOverlay">-->
+    <!--        <attr name="yt_playerView" format="reference" />-->
+    <!--        <attr name="yt_seekSeconds" format="integer" />-->
+    <!--        <attr name="yt_animationDuration" format="integer" />-->
+    <!--        <attr name="yt_iconAnimationDuration" format="integer" />-->
+    <!--        <attr name="yt_arcSize" format="dimension" />-->
+    <!--        <attr name="yt_tapCircleColor" format="color" />-->
+    <!--        <attr name="yt_backgroundCircleColor" format="color" />-->
+
+    <!--        <attr name="yt_textAppearance" format="reference" />-->
+    <!--        <attr name="yt_icon" format="reference" />-->
+    <!--    </declare-styleable>-->
+
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="seekBarRotation">
+            <!-- Clock wise - 90 deg; top = min, bottom = max -->
+            <enum name="CW90" value="90" />
+            <!-- Clock wise - 270 deg; bottom = min, top = max -->
+            <enum name="CW270" value="270" />
+        </attr>
+    </declare-styleable>
+
+</resources>
