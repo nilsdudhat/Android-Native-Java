@@ -1511,7 +1511,11 @@ public class VideoPlayerActivity extends AppCompatActivity {
             Bitmap frame = retriever.getFrameAtTime();
             int width = frame.getWidth();
             int height = frame.getHeight();
-            retriever.release();
+            try {
+                retriever.release();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
             if (width < height) {
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

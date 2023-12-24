@@ -24,7 +24,6 @@ import android.webkit.MimeTypeMap;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.BuildConfig;
 import com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.R;
 import com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.database.videofiles.VideoModel;
 import com.offlinevideoplayer.video.player.hdvideoplayer.mediaplayer.hdplayer.database.videofolders.VideoFolderModel;
@@ -86,7 +85,7 @@ public class Utils {
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "My application name");
             String shareMessage = "\nLet me recommend you this application\n\n";
-            shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
+            shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + activity.getPackageName() + "\n\n";
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
             activity.startActivity(Intent.createChooser(shareIntent, "choose one"));
         } catch (Exception e) {
