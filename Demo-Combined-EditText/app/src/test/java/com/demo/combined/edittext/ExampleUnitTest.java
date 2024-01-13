@@ -1,4 +1,4 @@
-package com.demo.combined.edittext;
+package com.java.demo.combined.edittext;
 
 import org.junit.Test;
 

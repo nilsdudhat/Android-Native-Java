@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.demo.combined.edittext'
+    namespace 'com.java.demo.combined.edittext'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.demo.combined.edittext"
+        applicationId "com.java.demo.combined.edittext"
         minSdk 16
         targetSdk 34
         versionCode 1

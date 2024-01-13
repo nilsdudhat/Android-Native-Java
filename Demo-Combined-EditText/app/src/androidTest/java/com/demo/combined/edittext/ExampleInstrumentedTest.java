@@ -1,4 +1,4 @@
-package com.demo.combined.edittext;
+package com.java.demo.combined.edittext;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.demo.combined.edittext", appContext.getPackageName());
+        assertEquals("com.java.demo.combined.edittext", appContext.getPackageName());
     }
 }

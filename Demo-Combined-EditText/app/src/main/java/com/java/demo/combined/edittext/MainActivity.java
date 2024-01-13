@@ -1,4 +1,4 @@
-package com.demo.combined.edittext;
+package com.java.demo.combined.edittext;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-import com.demo.combined.edittext.databinding.ActivityMainBinding;
+import com.java.demo.combined.edittext.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
