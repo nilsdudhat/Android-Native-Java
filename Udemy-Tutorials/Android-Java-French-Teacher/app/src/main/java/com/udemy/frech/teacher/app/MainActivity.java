@@ -9,18 +9,16 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnBlack, btnGreen, btnRed, btnPurple, btnYellow;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnBlack = findViewById(R.id.btnBlack);
-        btnGreen = findViewById(R.id.btnGreen);
-        btnRed = findViewById(R.id.btnRed);
-        btnPurple = findViewById(R.id.btnPurple);
-        btnYellow = findViewById(R.id.btnYellow);
+        Button btnBlack = findViewById(R.id.btnBlack);
+        Button btnGreen = findViewById(R.id.btnGreen);
+        Button btnRed = findViewById(R.id.btnRed);
+        Button btnPurple = findViewById(R.id.btnPurple);
+        Button btnYellow = findViewById(R.id.btnYellow);
 
         btnBlack.setOnClickListener(this);
         btnGreen.setOnClickListener(this);
