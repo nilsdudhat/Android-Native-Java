@@ -18,11 +18,6 @@ import com.udemy.volume.calculator.R;
 
 public class SphereActivity extends AppCompatActivity {
 
-    Button btnCalculate;
-    TextView txtResult;
-    TextInputEditText edtRadius;
-    TextInputLayout textInputLayout;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +33,10 @@ public class SphereActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        textInputLayout = findViewById(R.id.length_container);
-        edtRadius = findViewById(R.id.edit_text);
-        txtResult = findViewById(R.id.txt_result);
-        btnCalculate = findViewById(R.id.btn_calculate);
+        TextInputLayout radiusContainer = findViewById(R.id.radius_container);
+        TextView edtRadius = findViewById(R.id.edit_radius);
+        TextView txtResult = findViewById(R.id.txt_result);
+        Button btnCalculate = findViewById(R.id.btn_calculate);
 
         edtRadius.addTextChangedListener(new TextWatcher() {
             @Override
@@ -56,14 +51,14 @@ public class SphereActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                textInputLayout.setError("");
+                radiusContainer.setError("");
             }
         });
 
         btnCalculate.setOnClickListener(v -> {
             if ((edtRadius.getText() == null)
                     || (edtRadius.getText().toString().isEmpty())) {
-                textInputLayout.setError("Enter Radius");
+                radiusContainer.setError("Enter Radius");
 
                 return;
             }

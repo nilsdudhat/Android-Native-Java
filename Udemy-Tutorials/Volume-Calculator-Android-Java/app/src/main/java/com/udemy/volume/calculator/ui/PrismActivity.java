@@ -18,13 +18,6 @@ import com.udemy.volume.calculator.R;
 
 public class PrismActivity extends AppCompatActivity {
 
-    Button btnCalculate;
-    TextView txtResult;
-    TextInputEditText editArea;
-    TextInputLayout areaContainer;
-    TextInputEditText editHeight;
-    TextInputLayout heightContainer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +33,13 @@ public class PrismActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        editArea = findViewById(R.id.edit_legth);
-        areaContainer = findViewById(R.id.length_container);
-        editHeight = findViewById(R.id.edit_height);
-        heightContainer = findViewById(R.id.height_container);
-        txtResult = findViewById(R.id.txt_result);
-        btnCalculate = findViewById(R.id.btn_calculate);
+
+        TextInputEditText editArea = findViewById(R.id.edit_area);
+        TextInputLayout areaContainer = findViewById(R.id.area_container);
+        TextInputEditText editHeight = findViewById(R.id.edit_height);
+        TextInputLayout heightContainer = findViewById(R.id.height_container);
+        TextView txtResult = findViewById(R.id.txt_result);
+        Button btnCalculate = findViewById(R.id.btn_calculate);
 
         editArea.addTextChangedListener(new TextWatcher() {
             @Override

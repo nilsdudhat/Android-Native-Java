@@ -18,11 +18,6 @@ import com.udemy.volume.calculator.R;
 
 public class CubeActivity extends AppCompatActivity {
 
-    Button btnCalculate;
-    TextView txtResult;
-    TextInputEditText editLength;
-    TextInputLayout lengthContainer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,10 +33,11 @@ public class CubeActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        editLength = findViewById(R.id.edit_legth);
-        lengthContainer = findViewById(R.id.length_container);
-        txtResult = findViewById(R.id.txt_result);
-        btnCalculate = findViewById(R.id.btn_calculate);
+
+        TextInputEditText editLength = findViewById(R.id.edit_length);
+        TextInputLayout lengthContainer = findViewById(R.id.length_container);
+        TextView txtResult = findViewById(R.id.txt_result);
+        Button btnCalculate = findViewById(R.id.btn_calculate);
 
         editLength.addTextChangedListener(new TextWatcher() {
             @Override

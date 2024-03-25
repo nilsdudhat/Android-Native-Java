@@ -18,13 +18,6 @@ import com.udemy.volume.calculator.R;
 
 public class CylinderActivity extends AppCompatActivity {
 
-    Button btnCalculate;
-    TextView txtResult;
-    TextInputEditText editRadius;
-    TextInputLayout radiusContainer;
-    TextInputEditText editHeight;
-    TextInputLayout heightContainer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +33,13 @@ public class CylinderActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        editHeight = findViewById(R.id.edit_height);
-        heightContainer = findViewById(R.id.height_container);
-        editRadius = findViewById(R.id.edit_legth);
-        radiusContainer = findViewById(R.id.length_container);
-        txtResult = findViewById(R.id.txt_result);
-        btnCalculate = findViewById(R.id.btn_calculate);
+
+        TextInputEditText editHeight = findViewById(R.id.edit_height);
+        TextInputLayout heightContainer = findViewById(R.id.height_container);
+        TextInputEditText editRadius = findViewById(R.id.edit_radius);
+        TextInputLayout radiusContainer = findViewById(R.id.radius_container);
+        TextView txtResult = findViewById(R.id.txt_result);
+        Button btnCalculate = findViewById(R.id.btn_calculate);
 
         editRadius.addTextChangedListener(new TextWatcher() {
             @Override
