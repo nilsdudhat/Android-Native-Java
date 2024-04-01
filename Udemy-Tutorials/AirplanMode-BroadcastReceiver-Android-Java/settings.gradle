@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AirplanMode-BroadcastReceiver-Android-Java"
+rootProject.name = "AirplaneMode-BroadcastReceiver-Android-Java"
 include ':app'

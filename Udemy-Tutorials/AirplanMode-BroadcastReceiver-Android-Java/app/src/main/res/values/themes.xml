@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.AirplanModeBroadcastReceiverAndroidJava" parent="Base.Theme.AirplanModeBroadcastReceiverAndroidJava" />
+    <style name="Theme.AirplaneModeBroadcastReceiverAndroidJava" parent="Base.Theme.AirplanModeBroadcastReceiverAndroidJava" />
 </resources>
