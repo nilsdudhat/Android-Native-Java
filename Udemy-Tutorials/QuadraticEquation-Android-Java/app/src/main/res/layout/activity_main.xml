@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="equation"
+            type="com.udemy.quadraticequation.app.data.Equation" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <EditText
+            android:id="@+id/edt_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            android:hint="Enter a"
+            android:inputType="number"
+            android:text="@={equation.a}"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edt_b"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edt_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            android:hint="Enter b"
+            android:inputType="number"
+            android:text="@={equation.b}"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/edt_c"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edt_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="24dp"
+            android:hint="Enter c"
+            android:inputType="number"
+            android:text="@={equation.c}"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/btn_solve"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_solve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:onClick="@{equation::solveEquation}"
+            android:text="Solve"
+            app:layout_constraintBottom_toTopOf="@+id/txt_solution"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="48dp"
+            android:text="Solution"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
