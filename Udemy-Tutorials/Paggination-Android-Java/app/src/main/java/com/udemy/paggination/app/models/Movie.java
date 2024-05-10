@@ -3,13 +3,11 @@ package com.udemy.paggination.app.models;
 import android.widget.ImageView;
 
 import androidx.databinding.BaseObservable;
-import androidx.databinding.Bindable;
 import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.udemy.paggination.app.BR;
 
 import java.util.List;
 
@@ -57,6 +55,15 @@ public class Movie extends BaseObservable {
     @SerializedName("poster_path")
     @Expose
     private String posterPath;
+    @BindingAdapter({"posterPath"})
+    public static void loadImage(ImageView imageView, String imageName) {
+        // Basic Url : https://image.tmdb.org/t/p/w500
+        String imageUrl = "https://image.tmdb.org/t/p/w500" + imageName;
+
+        Glide.with(imageView.getContext())
+                .load(imageUrl)
+                .into(imageView);
+    }
     @SerializedName("production_companies")
     @Expose
     private List<ProductionCompany> productionCompanies;

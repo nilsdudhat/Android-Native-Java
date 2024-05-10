@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.bumptech.glide.RequestManager;
 import com.udemy.paggination.app.R;
 import com.udemy.paggination.app.adapters.MovieAdapter;
 import com.udemy.paggination.app.adapters.MovieLoadStateAdapter;
@@ -23,18 +22,10 @@ import com.udemy.paggination.app.utils.GridSpace;
 import com.udemy.paggination.app.utils.MovieComparator;
 import com.udemy.paggination.app.viewmodels.MovieViewModel;
 
-import javax.inject.Inject;
-
-import dagger.hilt.android.AndroidEntryPoint;
-
-@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
     private MovieAdapter movieAdapter;
     private ActivityMainBinding binding;
-
-    @Inject
-    RequestManager requestManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupMovieRecyclerView() {
         if (movieAdapter == null) {
-            movieAdapter = new MovieAdapter(new MovieComparator(), requestManager);
+            movieAdapter = new MovieAdapter(new MovieComparator());
         }
 
         GridLayoutManager layoutManager = new GridLayoutManager(MainActivity.this, 2);

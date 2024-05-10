@@ -19,11 +19,8 @@ public class MovieAdapter extends PagingDataAdapter<Movie, MovieAdapter.ViewHold
     public static final int LOADING_ITEM = 0;
     public static final int MOVIE_ITEM = 0;
 
-    RequestManager requestManager;
-
-    public MovieAdapter(@NonNull DiffUtil.ItemCallback<Movie> diffCallback, RequestManager requestManager) {
+    public MovieAdapter(@NonNull DiffUtil.ItemCallback<Movie> diffCallback) {
         super(diffCallback);
-        this.requestManager = requestManager;
     }
 
     @NonNull
@@ -38,14 +35,6 @@ public class MovieAdapter extends PagingDataAdapter<Movie, MovieAdapter.ViewHold
     public void onBindViewHolder(@NonNull MovieAdapter.ViewHolder holder, int position) {
         Movie movie = getItem(position);
         holder.binding.setMovie(movie);
-
-        if (movie != null) {
-            requestManager
-                    .load("https://image.tmdb.org/t/p/w500" + movie.getPosterPath())
-                    .into(holder.binding.imgMovie);
-
-            holder.binding.txtRating.setText(String.valueOf(movie.getVoteAverage()));
-        }
     }
 
     @Override
