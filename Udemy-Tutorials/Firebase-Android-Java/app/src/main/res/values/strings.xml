@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Firebase-Android-Java</string>
+    <string name="firebase_realtime_db_url">https://fir-demo-60e6a-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</resources>
