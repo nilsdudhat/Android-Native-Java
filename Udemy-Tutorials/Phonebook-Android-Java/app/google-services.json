@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "445915123153",
+    "firebase_url": "https://phonebook-41c1a-default-rtdb.firebaseio.com",
+    "project_id": "phonebook-41c1a",
+    "storage_bucket": "phonebook-41c1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445915123153:android:9cdde968db03c9a90c64f0",
+        "android_client_info": {
+          "package_name": "com.udemy.phonebook.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRIproQtnm4WhFV0rH38XFUFByt_qDmZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
