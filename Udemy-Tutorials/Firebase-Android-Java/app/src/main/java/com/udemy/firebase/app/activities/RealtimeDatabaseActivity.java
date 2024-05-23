@@ -21,7 +21,7 @@ import com.udemy.firebase.app.models.User;
 
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class RealtimeDatabaseActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 

@@ -47,5 +47,10 @@ dependencies {
     implementation platform(libs.firebase.bom)
 
     implementation 'com.google.firebase:firebase-analytics'
+
+    // Firebase Realtime Database
     implementation 'com.google.firebase:firebase-database'
+    
+    // Firebase Cloud Firestore Database
+    implementation 'com.google.firebase:firebase-firestore'
 }

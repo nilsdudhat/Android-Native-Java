@@ -15,7 +15,10 @@
         android:theme="@style/Theme.FirebaseAndroidJava"
         tools:targetApi="31">
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.RealtimeDatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FirestoreDatabaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
