@@ -154,11 +154,12 @@ public class ScannerActivity extends AppCompatActivity {
 
                                     for (Text.Element element : line.getElements()) {
                                         String elementText = element.getText();
-                                        stringBuilder.append(elementText);
+                                        stringBuilder.append(elementText).append(" ");
                                     }
 
-                                    binding.txtDetected.setText(stringBuilder);
+                                    binding.txtDetected.setText(String.valueOf(stringBuilder).trim());
                                 }
+                                stringBuilder.append("\n");
                             }
                         }
                     })
