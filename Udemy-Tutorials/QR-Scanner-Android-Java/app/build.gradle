@@ -1,0 +1,60 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+    namespace 'com.udemy.qrscanner.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.udemy.qrscanner.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // 1st way - Use this dependency to bundle the model with your app
+    implementation libs.barcode.scanning
+
+    // 2nd way - Use this dependency to use the dynamically downloaded model in Google Play Services
+    implementation libs.play.services.mlkit.barcode.scanning
+
+    // CameraX
+    implementation libs.camera.core
+    implementation libs.camera.camera2
+    implementation libs.camera.lifecycle
+    implementation libs.camera.video
+
+    implementation libs.camera.view
+    implementation libs.camera.extensions
+
+
+}
