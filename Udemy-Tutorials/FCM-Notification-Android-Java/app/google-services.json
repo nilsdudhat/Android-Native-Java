@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1043814019581",
+    "project_id": "fcmapp-9cd48",
+    "storage_bucket": "fcmapp-9cd48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043814019581:android:fce555665586ac20d7e994",
+        "android_client_info": {
+          "package_name": "com.udemy.fcm.notification.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxG1fOaxQLX7vVGhMLIFBJGzyAIiUiv4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
