@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyLoginAndroidJava" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.AnimationAndroidJava" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="fontFamily">@font/sf_pro_black</item>
     </style>
 
-    <style name="Theme.MyLoginAndroidJava" parent="Base.Theme.MyLoginAndroidJava" />
+    <style name="Theme.AnimationAndroidJava" parent="Base.Theme.AnimationAndroidJava" />
 </resources>
