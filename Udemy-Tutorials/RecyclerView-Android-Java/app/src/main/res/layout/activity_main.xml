@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView App"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_normal_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_normal_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Normal Recycler View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_card_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <Button
+        android:id="@+id/btn_card_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Recycler View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_single_selection_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_normal_rv" />
+
+    <Button
+        android:id="@+id/btn_single_selection_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Selection Recycler View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_multi_select_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_card_rv" />
+
+    <Button
+        android:id="@+id/btn_multi_select_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi Select Recycler View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_swipe_delete_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_single_selection_rv" />
+
+    <Button
+        android:id="@+id/btn_swipe_delete_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swipe and Delete Recycler View"
+        app:layout_constraintBottom_toTopOf="@+id/btn_multi_view_rv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_multi_select_rv" />
+
+    <Button
+        android:id="@+id/btn_multi_view_rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi View Recycler View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_swipe_delete_rv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
