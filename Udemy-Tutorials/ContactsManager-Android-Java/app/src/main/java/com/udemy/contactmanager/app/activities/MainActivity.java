@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(MainActivity.this).get(ContactViewModel.class);
         viewModel.getAllContacts().observe(MainActivity.this, contacts -> {
-            contactAdapter.setContactList(contacts);
             contactList = new ArrayList<>(contacts);
+            contactAdapter.setContactList(contacts);
         });
     }
 

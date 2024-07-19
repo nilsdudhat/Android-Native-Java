@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FF9800"
-    tools:context=".fragments.FirstFragment">
+    tools:context=".fragments.SecondFragment">
 
     <TextView
         android:id="@+id/txt_title"

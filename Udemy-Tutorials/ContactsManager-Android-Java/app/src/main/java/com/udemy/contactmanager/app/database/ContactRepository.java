@@ -33,7 +33,7 @@ public class ContactRepository {
             }
         });
     }
-
+ 
     public void deleteContact(Contact contact) {
         executorService.execute(new Runnable() {
             @Override
