@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="speech_prompt">Say something…</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\\\'t support speech input</string>
+    <string name="app_name">Cartoon Photo Maker &amp; Editor</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="permission_message">You would not be able to edit photos without giving access to your devices storage. Do you want to change your settings</string>
+</resources>

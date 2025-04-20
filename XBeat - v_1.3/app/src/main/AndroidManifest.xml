@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xbeat.videostatus.statusmaker">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.xbeat.videostatus.statusmaker.BaseApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.AlbumActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.CategoryDataActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.FavouritesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.PlayMyVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.PlayVideoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.VideoMakingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.VideoPreviewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.StartActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.DashBoardActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.ThankYouActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.xbeat.videostatus.statusmaker.Activities.APIActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xbeat.videostatus.statusmaker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!--        Ad Utils-->
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="208825984" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <meta-data
+            android:name="com.startapp.sdk.RETURN_ADS_ENABLED"
+            android:value="false" />
+
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true" />
+    </application>
+</manifest>

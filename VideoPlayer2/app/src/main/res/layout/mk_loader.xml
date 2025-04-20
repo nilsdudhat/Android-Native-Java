@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19000000">
+
+<!--    <com.tuyenmonkey.mkloader.MKLoader-->
+<!--        android:id="@+id/mk_loader"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        app:mk_color="@color/orange"-->
+<!--        app:mk_type="FourPulse" />-->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressBackgroundTint="@color/black"
+        android:progressDrawable="@color/purple_700"
+        android:progressTint="@color/orange"/>
+</RelativeLayout>

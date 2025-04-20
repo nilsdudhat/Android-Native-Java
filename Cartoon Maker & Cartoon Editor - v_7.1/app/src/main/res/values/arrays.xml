@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="titlename">
+        <item>FaceShape</item>
+        <item>Skin Tone</item>
+        <item>HairStyle</item>
+        <item>Hair Color</item>
+        <item>Eye</item>
+        <item>Eye Brows</item>
+        <item>Mouth</item>
+        <item>Nose</item>
+        <item>Goggles</item>
+        <item>Hats</item>
+        <item>Dress</item>
+        <item>Hands</item>
+        <item>Smiley</item>
+        <item>Background</item>
+    </array>
+</resources>

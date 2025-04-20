@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="blckltans">#98060606</color>
+    <color name="cardview_light_background">#ffffffff</color>
+    <color name="colorAccent">#872100</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="tran">#00555555</color>
+    <color name="white">#fff</color>
+    <color name="grey">#373737</color>
+
+    <color name="orange">#F44336</color>
+    <color name="orange_dark">#872100</color>
+</resources>
